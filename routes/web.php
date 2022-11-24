@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\checkoutController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('paypal/checkout', [checkoutController::class, 'checkout'])->name('checkout');
+Route::get('paypal/return', [checkoutController::class, 'paypalReturn'])->name('paypalReturn');
+Route::get('paypal/cancel', [checkoutController::class, 'paypalCancel'])->name('paypalCancel');

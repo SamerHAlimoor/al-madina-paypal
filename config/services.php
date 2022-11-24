@@ -30,5 +30,10 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
+    'paypal' => [
+        'mode' => 'sandbox',
+        'client_id' => 'AdMkmM_jA35NWwRH7LXcBih0APsRvkHwkqRW1CwU1xj9ru9zaiilDmRbpS5LN25dfXjV6rPQ6MMBGvFt',
+        'secret' => 'EPZGLPTtM88ZlOfZdNnn1ItNEXDZUVem1i9LqeRYhoBnibGmXDmhqYtGrJH2hTePX9ikahmlBv86gzK3',
+    ],
 
 ];
